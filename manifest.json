@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Magic Card Scraper",
+  "version": "1.0",
+  "description": "Extract card names from EDHREC tabs.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "clipboardWrite",
+    "notifications",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_title": "Scan EDHREC Tabs"
+  },
+  "background": {
+    "scripts": ["Scraper.js"]
+  }
+}
